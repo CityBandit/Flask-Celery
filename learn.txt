@@ -1,0 +1,31 @@
+
+--- CELERY ----
+ $ celery -A app.celery worker --loglevel INFO --logfile logs.log
+
+-- FLOWER --
+ $ celery -A app.celery flower --port=5555 --broker=redis://localhost:6379/0 => where app is the file and celery is the celery instance
+   The official flower docker image does not have a tag for versions greater than 0.9.7 thus why this version was used.
+   to see the version that yuu are using, use the command
+   $ docker compose exec flower pip freeze
+
+
+--- Authentication ----- (lets add basic authentication)
+sudo apt install apache2-utils => To install htpasswd
+htpasswd -c htpasswd antony
+
+htpasswd => This is the command-line utility used to manage user files for basic authentication in an Apache HTTP server.
+-c => this specifies that a new file should be created. If it exists, it is overwritten(deletes everything). if this flag is ommited, the new user will be added to the existing file
+htpasswd => This is the password file to be created or updated.
+antony => this is the username 
+
+once the file is created, now mount it to the nginx service
+
+
+------ execution -----
+$ docker compose up -d --build
+$ docker compose exec worker python 
+   from app import add
+   task = add.delay(10, 20)
+   task.status
+   task.result 
+navigate to http://localhost:5555 => you will be prompted to enter your username and password.(admin, pass)

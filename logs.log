@@ -1,0 +1,42 @@
+[2024-07-30 18:13:07,925: WARNING/MainProcess] /home/city/.local/lib/python3.8/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-07-30 18:13:07,929: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-07-30 18:13:07,929: WARNING/MainProcess] /home/city/.local/lib/python3.8/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-07-30 18:13:07,930: INFO/MainProcess] mingle: searching for neighbors
+[2024-07-30 18:13:08,937: INFO/MainProcess] mingle: all alone
+[2024-07-30 18:13:08,951: INFO/MainProcess] celery@citybandit ready.
+[2024-07-30 18:15:22,540: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-07-30 18:18:23,155: INFO/MainProcess] Task app.add[19faacb6-dde6-4124-9f13-e5b7930c2c07] received
+[2024-07-30 18:18:28,166: INFO/ForkPoolWorker-1] Task app.add[19faacb6-dde6-4124-9f13-e5b7930c2c07] succeeded in 5.010485204000361s: 30
+[2024-07-30 18:19:55,713: INFO/MainProcess] Task app.add[1621d2e8-b672-4f55-bc75-982c3f99c92f] received
+[2024-07-30 18:20:00,719: INFO/ForkPoolWorker-1] Task app.add[1621d2e8-b672-4f55-bc75-982c3f99c92f] succeeded in 5.004907632999675s: 40
+[2024-07-30 18:24:31,260: WARNING/MainProcess] /home/city/.local/lib/python3.8/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-07-30 18:24:31,263: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-07-30 18:24:31,264: WARNING/MainProcess] /home/city/.local/lib/python3.8/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-07-30 18:24:31,265: INFO/MainProcess] mingle: searching for neighbors
+[2024-07-30 18:24:32,270: INFO/MainProcess] mingle: all alone
+[2024-07-30 18:24:32,284: INFO/MainProcess] celery@citybandit ready.
+[2024-07-30 18:24:41,537: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-07-30 18:25:48,124: INFO/MainProcess] Task app.add[e84188d2-0781-4ff0-a48e-3e48bebad0bc] received
+[2024-07-30 18:25:58,139: INFO/ForkPoolWorker-1] Task app.add[e84188d2-0781-4ff0-a48e-3e48bebad0bc] succeeded in 10.013266734000354s: 50
+[2024-07-30 18:26:32,591: INFO/MainProcess] Task app.add[60ce0fef-9c1a-4dca-8708-4ddcd28b6e2d] received
+[2024-07-30 18:26:42,604: INFO/ForkPoolWorker-1] Task app.add[60ce0fef-9c1a-4dca-8708-4ddcd28b6e2d] succeeded in 10.011922494000828s: 50
